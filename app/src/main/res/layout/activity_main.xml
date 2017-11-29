@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context="com.example.kaligaswag.sq.MainActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewAmount"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextName"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:text="@string/Amount" />
+
+    <Button
+        android:id="@+id/buttonDecrease"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewAmount"
+        android:layout_alignTop="@+id/textViewAmount"
+        android:layout_toStartOf="@+id/textViewAmount"
+        android:text="@string/Decrease" />
+
+    <Button
+        android:id="@+id/buttonIncrease"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewAmount"
+        android:layout_alignTop="@+id/textViewAmount"
+        android:layout_toEndOf="@+id/textViewAmount"
+        android:text="@string/Increase" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonIncrease"
+        android:layout_alignEnd="@+id/editTextName"
+        android:layout_alignTop="@+id/buttonIncrease"
+        android:text="@string/add" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/editTextName"
+        android:layout_below="@+id/textViewAmount" />
+</RelativeLayout>

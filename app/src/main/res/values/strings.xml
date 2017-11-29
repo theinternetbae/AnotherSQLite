@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SQ</string>
+    <string name="name">Name</string>
+    <string name="Amount">0</string>
+    <string name="Decrease">-</string>
+    <string name="Increase">+</string>
+    <string name="add">ADD</string>
+    <string name="AmoutList">0</string>
+    <string name="empty_item">Empty Item</string>
+</resources>
